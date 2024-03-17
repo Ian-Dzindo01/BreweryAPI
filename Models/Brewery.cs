@@ -13,6 +13,9 @@ namespace BreweryAPI.Models
         public string Location { get; set; }
         public int FoundationDate { get; set; }
 
+        public Brewery() {  }
+
+
         public Brewery(string name, string location, int foundationDate)
         {
             Name = name;

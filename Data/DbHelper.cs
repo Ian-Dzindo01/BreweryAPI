@@ -14,7 +14,7 @@ namespace BreweryAPI.DbHelper
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlite($"Data Source={connectionString}");
+            optionsBuilder.UseSqlite(connectionString);
         }
     }
 }

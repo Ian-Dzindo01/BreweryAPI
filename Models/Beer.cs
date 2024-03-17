@@ -15,6 +15,9 @@ namespace BreweryAPI.Models
         public string Color { get; set; }
         public string Brewery { get; set; }
 
+        public Beer() {  }
+
+
         public Beer(string name, float size, float abv, string color, string brewery)
         {
             Name = name;
