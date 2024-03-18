@@ -1,4 +1,3 @@
-using System.Configuration;
 using BreweryAPI.Models;
 using BreweryAPI.DbHelper;
 
@@ -15,8 +14,7 @@ namespace BreweryAPI.Controllers
 
         public void AddBeer()
         {
-            Console.WriteLine("Name of beer: ");
-            string Name = Console.ReadLine();
+            string Name = GetNameInput("Name of beer: ");
 
             Console.WriteLine("Size: ");
             float Size = float.Parse(Console.ReadLine());
@@ -54,5 +52,35 @@ namespace BreweryAPI.Controllers
                 Console.WriteLine("Beer not found");
             }
         }
+
+        // Move to Validation class
+        public static string GetNameInput(string message)
+        {
+            Console.WriteLine(message);
+            string name = Console.ReadLine();
+
+            if (name.Length > 40)
+            {
+                Console.WriteLine("Too many characters. Try again.");
+                return GetNameInput(message); // Corrected
+            }
+
+            return name;
+        }
+
+        public static string GetFloatInput(string message)
+        {
+            Console.WriteLine(message);
+            string input = Console.ReadLine();
+
+            if (!float.TryParse(input, out float result))
+            {
+                Console.WriteLine("Invalid input. Please enter a valid float number.");
+                return GetFloatInput(message);
+            }
+
+            return input;
+        }
     }
 }
+

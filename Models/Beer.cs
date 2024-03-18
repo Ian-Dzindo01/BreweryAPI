@@ -13,18 +13,21 @@ namespace BreweryAPI.Models
         public float Size { get; set; }
         public float ABV { get; set; }
         public string Color { get; set; }
-        public string Brewery { get; set; }
 
-        public Beer() {  }
+        // Navigation property
+        public string BreweryName { get; set; }
+        [ForeignKey("BreweryName")]
+        public Brewery Brewery { get; set; }
 
+        public Beer() { }
 
-        public Beer(string name, float size, float abv, string color, string brewery)
+        public Beer(string name, float size, float abv, string color, string breweryName)
         {
             Name = name;
             Size = size;
             ABV = abv;
             Color = color;
-            Brewery = brewery;
+            BreweryName = breweryName;
         }
     }
 }

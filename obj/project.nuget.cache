@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "45cMwmlsI/bnl11iE9Hp9Y12Ahz5HXCXNCOqSisx2f790ew8IV7EiM0P4fxBW+cBciN5oKlLRpi+0kA6XugYiQ==",
+  "dgSpecHash": "ykhZLlhM6mC/EC6CjQCTehpM85+fp9rF73K1Jmk7Wo7vrkY/QgUAlardRI41ikugphFeFi1aFLR6kq/f3qUdog==",
   "success": true,
   "projectFilePath": "D:\\Projects\\WarehouseAdmin\\WarehouseAdmin.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\iandz\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
+    "C:\\Users\\iandz\\.nuget\\packages\\microsoft.activities.extensions\\2.0.6.9\\microsoft.activities.extensions.2.0.6.9.nupkg.sha512",
     "C:\\Users\\iandz\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\7.0.0\\microsoft.bcl.asyncinterfaces.7.0.0.nupkg.sha512",
     "C:\\Users\\iandz\\.nuget\\packages\\microsoft.codeanalysis.analyzers\\3.3.4\\microsoft.codeanalysis.analyzers.3.3.4.nupkg.sha512",
     "C:\\Users\\iandz\\.nuget\\packages\\microsoft.codeanalysis.common\\4.8.0\\microsoft.codeanalysis.common.4.8.0.nupkg.sha512",
@@ -54,5 +55,16 @@
     "C:\\Users\\iandz\\.nuget\\packages\\system.text.json\\9.0.0-preview.2.24128.5\\system.text.json.9.0.0-preview.2.24128.5.nupkg.sha512",
     "C:\\Users\\iandz\\.nuget\\packages\\system.threading.channels\\7.0.0\\system.threading.channels.7.0.0.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Microsoft.Activities.Extensions 2.0.6.9' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Microsoft.Activities.Extensions",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    }
+  ]
 }
