@@ -16,6 +16,7 @@ namespace BreweryAPI.Models
 
         // Navigation property
         public string BreweryName { get; set; }
+        
         [ForeignKey("BreweryName")]
         public Brewery Brewery { get; set; }
 
