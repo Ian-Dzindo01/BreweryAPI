@@ -1,6 +1,7 @@
 using System.Configuration;
 using BreweryAPI.DbHelper;
 using BreweryAPI.Controllers;
+using BreweryAPI.Menus;
 
 namespace BreweryAPI.Input
 {
@@ -10,7 +11,6 @@ namespace BreweryAPI.Input
         static public void Start()
         {
             BreweryContext breweryContext = new BreweryContext();
-            Controller controller = new Controller(breweryContext);
 
             Console.WriteLine("------------------------------------");
             Console.WriteLine("1: Beers");
@@ -23,10 +23,19 @@ namespace BreweryAPI.Input
             switch (choice)
             {
                 case "1":
+                    BeerController beerController = new BeerController(breweryContext);
+                    BeerMenu beerMenu = new BeerMenu(beerController);
+                    beerMenu.Start();
                     break;
                 case "2":
-                    break;
+                    BreweryController breweryController = new BreweryController(breweryContext);
+                    BreweryMenu breweryMenu = new BreweryMenu(breweryController);
+                    breweryMenu.Start();
+                    break;  
                 case "3":
+                    // WholesalerController wholesalerController = new WholesalerController(breweryContext);
+                    // WholesalerMenu wholesalerMenu = new WholesalerMenu(controller);
+                    // wholesalerMenu.Start();
                     break;
                 case "4":
                     break;

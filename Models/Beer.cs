@@ -8,17 +8,18 @@ namespace BreweryAPI.Models
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
-
+        
         public string Name { get; set; }
         public float Size { get; set; }
         public float ABV { get; set; }
         public string Color { get; set; }
 
-        // Navigation property
-        public string BreweryName { get; set; }
-        
-        [ForeignKey("BreweryName")]
-        public Brewery Brewery { get; set; }
+        // Foreign key property
+        public string BreweryName { get; set; } // Change data type to string to reference BreweryName
+
+        // // Navigation property
+        // [ForeignKey("BreweryName")]
+        // public Brewery Brewery { get; set; }
 
         public Beer() { }
 
