@@ -15,12 +15,5 @@ namespace BreweryAPI.DbHelper
         {
             optionsBuilder.UseSqlite(connectionString);
         }
-        // protected override void OnModelCreating(ModelBuilder modelBuilder)
-        // {
-        //     modelBuilder.Entity<Beer>()
-        //         .HasOne(b => b.Brewery)
-        //         .WithMany(b => b.Beers)
-        //         .HasForeignKey(b => b.BreweryName);
-        // }
     }
 }

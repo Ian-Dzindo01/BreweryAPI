@@ -15,7 +15,7 @@ namespace BreweryAPI.Models
         public string Color { get; set; }
 
         // Foreign key property
-        public string BreweryName { get; set; } // Change data type to string to reference BreweryName
+        public string BreweryName { get; set; }
 
         // // Navigation property
         // [ForeignKey("BreweryName")]

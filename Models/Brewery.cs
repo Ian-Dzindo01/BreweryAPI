@@ -10,7 +10,7 @@ namespace BreweryAPI.Models
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
 
-        public string Name { get; set; }
+        public string BreweryName { get; set; }
         public string Location { get; set; }
         public int FoundationDate { get; set; }
 
@@ -21,7 +21,7 @@ namespace BreweryAPI.Models
 
         public Brewery(string name, string location, int foundationDate)
         {
-            Name = name;
+            BreweryName = name;
             Location = location;
             FoundationDate = foundationDate;
         }

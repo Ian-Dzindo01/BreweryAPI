@@ -33,9 +33,9 @@ namespace BreweryAPI.Input
                     breweryMenu.Start();
                     break;  
                 case "3":
-                    // WholesalerController wholesalerController = new WholesalerController(breweryContext);
-                    // WholesalerMenu wholesalerMenu = new WholesalerMenu(controller);
-                    // wholesalerMenu.Start();
+                    WholesalerController wholesalerController = new WholesalerController(breweryContext);
+                    WholesalerMenu wholesalerMenu = new WholesalerMenu(wholesalerController);
+                    wholesalerMenu.Start();
                     break;
                 case "4":
                     break;

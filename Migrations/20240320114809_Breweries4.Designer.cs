@@ -2,6 +2,7 @@
 using BreweryAPI.DbHelper;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -9,9 +10,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace WarehouseAdmin.Migrations
 {
     [DbContext(typeof(BreweryContext))]
-    partial class BreweryContextModelSnapshot : ModelSnapshot
+    [Migration("20240320114809_Breweries4")]
+    partial class Breweries4
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

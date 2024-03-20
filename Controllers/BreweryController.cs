@@ -32,7 +32,7 @@ namespace BreweryAPI.Controllers
         {
             string Name = Validation.GetStringInput("Name of brewery  you would like to delete: ");
 
-            var breweryToDelete = _breweryContext.Breweries.FirstOrDefault(b => b.Name == Name);
+            var breweryToDelete = _breweryContext.Breweries.FirstOrDefault(b => b.BreweryName == Name);
 
             if (breweryToDelete != null)
             {
@@ -52,7 +52,7 @@ namespace BreweryAPI.Controllers
             Console.WriteLine("Name of beer you would like to delete");
             string Name = Console.ReadLine();
 
-            var breweryToUpdate = _breweryContext.Breweries.FirstOrDefault(b => b.Name == Name);
+            var breweryToUpdate = _breweryContext.Breweries.FirstOrDefault(b => b.BreweryName == Name);
 
             if (breweryToUpdate == null)
             {
@@ -65,7 +65,7 @@ namespace BreweryAPI.Controllers
             Console.WriteLine("Foundation date: ");
             int FoundationDate = int.Parse(Console.ReadLine());
 
-            breweryToUpdate.Name = Name;
+            breweryToUpdate.BreweryName = Name;
             breweryToUpdate.Location = Location;
             breweryToUpdate.FoundationDate = FoundationDate;
 
