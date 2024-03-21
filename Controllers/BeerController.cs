@@ -82,6 +82,10 @@ namespace BreweryAPI.Controllers
             Console.WriteLine("Beer with name " + Name + " updated successfully.");
             beerMenu.Start();
         }
+        public List<Beer> GetAll()
+        {
+            return _breweryContext.Beers.ToList();
+        }
     }
 }
 

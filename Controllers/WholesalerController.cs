@@ -71,6 +71,10 @@ namespace BreweryAPI.Controllers
             Console.WriteLine("Wholesaler with name " + Name + " updated successfully.");
             wholesalerMenu.Start();
         }
+        public List<Wholesaler> GetAll()
+        {
+            return _breweryContext.Wholesalers.ToList();
+        }
     }
 }
 

@@ -1,5 +1,7 @@
 using BreweryAPI.DbHelper;
 using BreweryAPI.Controllers;
+using BreweryAPI.Models;
+using BreweryAPI.OutputHelper;
 
 
 namespace BreweryAPI.Menus
@@ -34,7 +36,8 @@ namespace BreweryAPI.Menus
                     controller.UpdateBrewery(this);
                     break;
                 case "4":
-                    // PrintBeerTable();
+                    List<Brewery> beers = controller.GetAll();
+                    ObjectHelper.PrintTable(beers);
                     break;
                 default:
                     Console.WriteLine("\nInvalid Command. Please type a number from 0 to 4.\n");

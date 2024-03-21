@@ -16,7 +16,6 @@ namespace BreweryAPI.Input
             Console.WriteLine("1: Beers");
             Console.WriteLine("2: Breweries");
             Console.WriteLine("3: Wholesalers");
-            Console.WriteLine("4: Update a Beer");
 
             string? choice = Console.ReadLine();
 

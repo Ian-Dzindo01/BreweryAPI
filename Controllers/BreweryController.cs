@@ -74,6 +74,11 @@ namespace BreweryAPI.Controllers
             Console.WriteLine("Brewery with name " + Name + " updated successfully.");
             breweryMenu.Start();
         }
+
+        public List<Brewery> GetAll()
+        {
+            return _breweryContext.Breweries.ToList();
+        }
     }
 }
 
