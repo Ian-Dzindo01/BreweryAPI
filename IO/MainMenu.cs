@@ -16,6 +16,7 @@ namespace BreweryAPI.Input
             Console.WriteLine("1: Beers");
             Console.WriteLine("2: Breweries");
             Console.WriteLine("3: Wholesalers");
+            Console.WriteLine("4: Clear out DB");
 
             string? choice = Console.ReadLine();
 
@@ -37,6 +38,9 @@ namespace BreweryAPI.Input
                     wholesalerMenu.Start();
                     break;
                 case "4":
+                    breweryContext.ClearDatabase();
+                    Console.WriteLine("Operation successfull.");
+                    Start();
                     break;
                 default:
                     Console.WriteLine("\nInvalid Command. Please type a number from 0 to 4.\n");

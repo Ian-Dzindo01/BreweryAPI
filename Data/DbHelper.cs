@@ -15,5 +15,12 @@ namespace BreweryAPI.DbHelper
         {
             optionsBuilder.UseSqlite(connectionString);
         }
+
+        public void ClearDatabase()
+        {
+            Database.ExecuteSqlRaw("DELETE FROM Beers");
+            Database.ExecuteSqlRaw("DELETE FROM Breweries");
+            Database.ExecuteSqlRaw("DELETE FROM Wholesalers");
+        }
     }
 }

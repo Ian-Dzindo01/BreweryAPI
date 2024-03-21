@@ -1,5 +1,4 @@
 - Beer needs to be linked to a brewer
-- List all beers by brewery
 - Add the sale of an existing beer to an existing wholesaler
 - Upon a sale, the quantity of a beer needs to be incremented in the wholesaler's inventory
 - A client can request a quote from a wholesaler.

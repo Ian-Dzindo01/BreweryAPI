@@ -79,6 +79,10 @@ namespace BreweryAPI.Controllers
         {
             return _breweryContext.Breweries.ToList();
         }
+        public List<Beer> GetBeersByBreweryName(string name)
+        {
+            return _breweryContext.Beers.Where(beer => beer.BreweryName == name).ToList();
+        }
     }
 }
 
