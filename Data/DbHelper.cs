@@ -10,7 +10,7 @@ namespace BreweryAPI.DbHelper
         public DbSet<Beer> Beers { get; set; }
         public DbSet<Brewery> Breweries { get; set; }
         public DbSet<Wholesaler> Wholesalers { get; set; }
-
+        public DbSet<Transaction> Transactions { get; set; }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder.UseSqlite(connectionString);
@@ -21,6 +21,8 @@ namespace BreweryAPI.DbHelper
             Database.ExecuteSqlRaw("DELETE FROM Beers");
             Database.ExecuteSqlRaw("DELETE FROM Breweries");
             Database.ExecuteSqlRaw("DELETE FROM Wholesalers");
+            Database.ExecuteSqlRaw("DELETE FROM __EFMigrationsHistory");
+
         }
     }
 }

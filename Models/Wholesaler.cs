@@ -12,6 +12,8 @@ namespace BreweryAPI.Models
         public string Name { get; set; }
         public string Location { get; set; }
 
+        public Dictionary<Beer, int> stock;
+
         public Wholesaler() {  }
 
         public Wholesaler(string name, string location)

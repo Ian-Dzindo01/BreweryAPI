@@ -1,4 +1,3 @@
-- Beer needs to be linked to a brewer
 - Add the sale of an existing beer to an existing wholesaler
 - Upon a sale, the quantity of a beer needs to be incremented in the wholesaler's inventory
 - A client can request a quote from a wholesaler.
@@ -7,6 +6,5 @@
 - A beer can be sold by several wholesalers
 - A wholesaler sells a defined list of beers, from any brewer, and has only a limited stock of those beers
 - The beers sold by the wholesaler have a fixed price imposed by the brewery
-- For this assessment, it is considered that all sales are made without tax
-- The database is pre-filled by you
-- Use REST architecture
+
+- Set up foreign keys

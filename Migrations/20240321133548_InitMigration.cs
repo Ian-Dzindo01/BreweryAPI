@@ -5,7 +5,7 @@
 namespace WarehouseAdmin.Migrations
 {
     /// <inheritdoc />
-    public partial class Breweries2 : Migration
+    public partial class InitMigration : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
