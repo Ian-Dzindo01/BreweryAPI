@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "ykhZLlhM6mC/EC6CjQCTehpM85+fp9rF73K1Jmk7Wo7vrkY/QgUAlardRI41ikugphFeFi1aFLR6kq/f3qUdog==",
+  "dgSpecHash": "V4/ju9nC+bLV9ncGgjWrMkX+fYqYT60QdXlKw1FTh1Z+ldOXS55BYzBogBbj03E0mCB4Iyzc4IH51NbnBdXmqQ==",
   "success": true,
   "projectFilePath": "D:\\Projects\\WarehouseAdmin\\WarehouseAdmin.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\iandz\\.nuget\\packages\\csvhelper\\31.0.2\\csvhelper.31.0.2.nupkg.sha512",
     "C:\\Users\\iandz\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\iandz\\.nuget\\packages\\microsoft.activities.extensions\\2.0.6.9\\microsoft.activities.extensions.2.0.6.9.nupkg.sha512",
     "C:\\Users\\iandz\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\7.0.0\\microsoft.bcl.asyncinterfaces.7.0.0.nupkg.sha512",

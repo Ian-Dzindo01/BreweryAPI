@@ -17,6 +17,8 @@ namespace BreweryAPI.Input
             Console.WriteLine("2: Breweries");
             Console.WriteLine("3: Wholesalers");
             Console.WriteLine("4: Clear out DB");
+            Console.WriteLine("5: Read in data from CSVs");
+
 
             string? choice = Console.ReadLine();
 
@@ -39,7 +41,12 @@ namespace BreweryAPI.Input
                     break;
                 case "4":
                     breweryContext.ClearDatabase();
-                    Console.WriteLine("Operation successfull.");
+                    Console.WriteLine("Operation successful.");
+                    Start();
+                    break;
+                case "5":
+                    breweryContext.ReadInFromCsv();
+                    Console.WriteLine("Operation successful.");
                     Start();
                     break;
                 default:
