@@ -82,15 +82,19 @@ namespace WarehouseAdmin.Migrations
                     b.Property<decimal>("Amount")
                         .HasColumnType("TEXT");
 
-                    b.Property<string>("BuyerName")
+                    b.Property<string>("BeerName")
                         .IsRequired()
                         .HasColumnType("TEXT");
 
-                    b.Property<string>("SellerName")
+                    b.Property<string>("BreweryName")
                         .IsRequired()
                         .HasColumnType("TEXT");
 
                     b.Property<DateTime>("TransactionDate")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("WholesalerName")
+                        .IsRequired()
                         .HasColumnType("TEXT");
 
                     b.HasKey("TransactionId");

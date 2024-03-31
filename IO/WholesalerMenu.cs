@@ -37,6 +37,7 @@ namespace BreweryAPI.Menus
                 case "4":
                     List<Wholesaler> beers = controller.GetAll();
                     ObjectHelper.PrintTable(beers);
+                    Start();
                     break;
                 default:
                     Console.WriteLine("\nInvalid Command. Please type a number from 0 to 4.\n");

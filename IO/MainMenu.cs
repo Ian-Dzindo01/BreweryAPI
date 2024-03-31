@@ -19,7 +19,6 @@ namespace BreweryAPI.Input
             Console.WriteLine("4: Clear out DB");
             Console.WriteLine("5: Read in data from CSVs");
 
-
             string? choice = Console.ReadLine();
 
             switch (choice)

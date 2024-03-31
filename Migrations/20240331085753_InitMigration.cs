@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace WarehouseAdmin.Migrations
 {
     /// <inheritdoc />
-    public partial class InitialMigration : Migration
+    public partial class InitMigration : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -33,8 +33,9 @@ namespace WarehouseAdmin.Migrations
                     TransactionId = table.Column<int>(type: "INTEGER", nullable: false)
                         .Annotation("Sqlite:Autoincrement", true),
                     TransactionDate = table.Column<DateTime>(type: "TEXT", nullable: false),
-                    BuyerName = table.Column<string>(type: "TEXT", nullable: false),
-                    SellerName = table.Column<string>(type: "TEXT", nullable: false),
+                    BreweryName = table.Column<string>(type: "TEXT", nullable: false),
+                    WholesalerName = table.Column<string>(type: "TEXT", nullable: false),
+                    BeerName = table.Column<string>(type: "TEXT", nullable: false),
                     Amount = table.Column<decimal>(type: "TEXT", nullable: false)
                 },
                 constraints: table =>

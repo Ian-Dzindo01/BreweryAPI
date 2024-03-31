@@ -9,12 +9,9 @@ namespace BreweryAPI.Models
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
-
         public string BreweryName { get; set; }
         public string Location { get; set; }
         public int FoundationDate { get; set; }
-
-        // Navigation property
         public ICollection<Beer> Beers { get; set; }
 
         public Brewery() { }

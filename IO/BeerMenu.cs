@@ -7,8 +7,6 @@ namespace BreweryAPI.Menus
     public class BeerMenu
     {
         private readonly BeerController controller;
-
-        // Constructor taking a Controller instance
         public BeerMenu(BeerController controller)
         {
             this.controller = controller;
